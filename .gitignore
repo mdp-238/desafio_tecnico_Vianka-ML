@@ -17,9 +17,12 @@
 
 # Permitir documentación
 !documentacion/
-!documentacion/*.drawio
-!documentacion/*.docx
+!documentacion/*.jpg
 !documentacion/*.pdf
+
+# Ignorar archivos de documentación no deseados
+documentacion/*.docx
+documentacion/*.drawio
 
 #gestión de incidentes
 !gestion-incidentes/
