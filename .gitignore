@@ -1,0 +1,24 @@
+# Permitir .gitignore
+!.gitignore
+
+# Ignorar todo por defecto
+*
+
+# Permitir terraform-aws
+!terraform-aws/
+!terraform-aws/*.tf
+!terraform-aws/terraform.tfvars
+
+# Permitir kubernetes-local
+!kubernetes-local/
+!kubernetes-local/*.yaml
+
+# Ignorar
+terraform-aws/.terraform/
+terraform-aws/terraform.tfstate
+terraform-aws/terraform.tfstate.backup
+terraform-aws/.terraform.lock.hcl
+terraform-aws/*.tfplan
+terraform-aws/*.log
+.kube/
+minikube/
