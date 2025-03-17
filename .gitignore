@@ -15,7 +15,20 @@
 !kubernetes-local/.gitkeep
 !kubernetes-local/*.yaml
 
-# Ignorar
+# Permitir documentación
+!documentacion/
+!documentacion/*.drawio
+!documentacion/*.docx
+!documentacion/*.pdf
+
+#gestión de incidentes
+!gestion-incidentes/
+!gestion-incidentes/.gitkeep
+!gestion-incidentes/*.tf
+!gestion-incidentes/*.tfvars
+!gestion-incidentes/*.txt
+
+# Ignorar archivos generados
 terraform-aws/.terraform/
 terraform-aws/terraform.tfstate
 terraform-aws/terraform.tfstate.backup
