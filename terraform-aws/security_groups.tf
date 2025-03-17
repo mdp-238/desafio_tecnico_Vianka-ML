@@ -24,7 +24,7 @@ resource "aws_security_group" "web_sg" {
     to_port     = 443
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
-    description = "Permitir salida a internet HTTPS"
+    description = "Permitir salida a internet (HTTPS)"
   }
 
   tags = {
