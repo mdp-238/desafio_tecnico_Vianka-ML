@@ -10,6 +10,3 @@ public_subnets  = ["10.0.101.0/24", "10.0.102.0/24"]
 instance_count = 1
 instance_type  = "t2.micro"
 ami_id         = "ami-08879933c9900d167"
-
-#Security Groups
-my_ip = "192.168.100.100/32"

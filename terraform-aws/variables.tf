@@ -36,9 +36,3 @@ variable "ami_id" {
   description = "Ubuntu 22.04 LTS"
   type        = string
 }
-
-#Security Groups
-variable "my_ip" {
-  description = "IP publica de ejemplo permitida para acceder por SSH"
-  type        = string
-}

@@ -20,31 +20,15 @@ resource "aws_security_group" "web_sg" {
   }
 
   egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-    description = "Permitir salida a internet"
-  }
-}
-
-resource "aws_security_group" "public_sg" {
-  name        = "public-sg"
-  description = "Permitir trafico HTTP desde internet a la subred publica"
-  vpc_id      = module.vpc.vpc_id
-
-  ingress {
-    from_port   = 80
-    to_port     = 80
+    from_port   = 443
+    to_port     = 443
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
-    description = "Trafico HTTP permitido desde cualquier parte"
+    description = "Permitir salida a internet HTTPS"
   }
 
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
+  tags = {
+    Name        = "SG-Web-Server"
+    Environment = "dev"
   }
-}   
+}

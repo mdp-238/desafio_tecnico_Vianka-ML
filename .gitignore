@@ -6,11 +6,13 @@
 
 # Permitir terraform-aws
 !terraform-aws/
+!terraform-aws/.gitkeep
 !terraform-aws/*.tf
 !terraform-aws/terraform.tfvars
 
 # Permitir kubernetes-local
 !kubernetes-local/
+!kubernetes-local/.gitkeep
 !kubernetes-local/*.yaml
 
 # Ignorar
